@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bnv_schedule"
+        android:title="Schedule"
+        android:icon="@drawable/b_main_bnv_tab_scheduled"/>
+
+
+    <item android:id="@+id/bnv_requests"
+        android:title="Requests"
+        android:icon="@drawable/b_main_bnv_tab_requestsd"/>
+
+    <item android:id="@+id/bnv_achievements"
+        android:title="Achievements"
+        android:icon="@drawable/b_main_bnv_tab_achievementsd"/>
+
+
+    <item android:id="@+id/bnv_profile"
+        android:title="Profile"
+        android:icon="@drawable/a_login_named"/>
+
+</menu>

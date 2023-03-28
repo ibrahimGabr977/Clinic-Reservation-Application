@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/b_main_reserve_windowbg"
+    >
+
+
+    <EditText
+        android:id="@+id/reserveWindow_edit_phoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="@string/phone_number"
+        android:textColorHint="@color/gray_color1"
+        android:background="@drawable/d_window_componentsbg"
+        android:textColor="@color/black_color"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintVertical_bias="0.21"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/a_login_phoned"
+        android:drawablePadding="7dp"
+        app:layout_constraintWidth_percent="0.77"
+        android:inputType="phone"
+        />
+
+
+    <EditText
+        android:id="@+id/reserveWindow_edit_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/reserveWindow_edit_phoneNumber"
+        app:layout_constraintRight_toRightOf="@id/reserveWindow_edit_phoneNumber"
+        app:layout_constraintTop_toBottomOf="@id/reserveWindow_edit_phoneNumber"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="@string/full_name"
+        android:textColorHint="@color/gray_color1"
+        android:background="@drawable/d_window_componentsbg"
+        android:textColor="@color/black_color"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="19dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/a_login_named"
+        android:drawablePadding="7dp"
+        android:inputType="textCapSentences"/>
+
+    <EditText
+        android:id="@+id/reserveWindow_edit_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/reserveWindow_edit_phoneNumber"
+        app:layout_constraintRight_toRightOf="@id/reserveWindow_edit_phoneNumber"
+        app:layout_constraintTop_toBottomOf="@id/reserveWindow_edit_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="@string/address"
+        android:textColorHint="@color/gray_color1"
+        android:background="@drawable/d_window_componentsbg"
+        android:textColor="@color/black_color"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="19dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/b_main_schedule_addressd"
+        android:drawablePadding="7dp"
+        />
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/reserveWindow_edit_address"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reserveWindow_edit_address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Date:"
+        android:textColor="@color/black_color"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="19dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:drawablePadding="7dp"
+        android:gravity="center"
+        android:layout_marginLeft="9dp"/>
+
+
+    <EditText
+        android:id="@+id/reserveWindow_edit_date_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/text1"
+        app:layout_constraintRight_toLeftOf="@id/reserveWindow_edit_date_month"
+        app:layout_constraintTop_toBottomOf="@id/reserveWindow_edit_address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="30"
+        android:textColorHint="@color/gray_color0"
+        android:background="@drawable/d_window_componentsbg"
+        android:textColor="@color/black_color"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="7.5dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:drawablePadding="7dp"
+        android:gravity="center"
+        android:maxLength="2"
+        android:inputType="date"/>
+
+
+
+
+
+    <EditText
+        android:id="@+id/reserveWindow_edit_date_month"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/reserveWindow_edit_date_day"
+        app:layout_constraintRight_toLeftOf="@id/reserveWindow_edit_date_year"
+        app:layout_constraintTop_toBottomOf="@id/reserveWindow_edit_address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="12"
+        android:textColorHint="@color/gray_color0"
+        android:background="@drawable/d_window_componentsbg"
+        android:textColor="@color/black_color"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="19dp"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:drawablePadding="7dp"
+        android:layout_marginLeft="7.5dp"
+        android:layout_marginRight="7.5dp"
+        android:gravity="center"
+        android:maxLength="2"
+        android:inputType="date"/>
+
+
+
+
+    <EditText
+        android:id="@+id/reserveWindow_edit_date_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/reserveWindow_edit_date_month"
+        app:layout_constraintRight_toRightOf="@id/reserveWindow_edit_address"
+        app:layout_constraintTop_toBottomOf="@id/reserveWindow_edit_address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="2021"
+        android:textColorHint="@color/gray_color0"
+        android:background="@drawable/d_window_componentsbg"
+        android:textColor="@color/black_color"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="7.5dp"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:drawablePadding="7dp"
+        android:gravity="center"
+        android:maxLength="4"
+        android:inputType="date"/>
+
+
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/reserveWindow_edit_address"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reserveWindow_edit_date_year"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Time:"
+        android:textColor="@color/black_color"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="19dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:drawablePadding="7dp"
+        android:gravity="center"
+        android:layout_marginLeft="9dp"/>
+
+
+    <EditText
+        android:id="@+id/reserveWindow_edit_hours"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/text2"
+        app:layout_constraintRight_toLeftOf="@id/reserveWindow_edit_minutes"
+        app:layout_constraintTop_toBottomOf="@id/reserveWindow_edit_date_year"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="12"
+        android:textColorHint="@color/gray_color0"
+        android:background="@drawable/d_window_componentsbg"
+        android:textColor="@color/black_color"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="7.5dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:drawablePadding="7dp"
+        android:gravity="center"
+        android:maxLength="2"
+        android:inputType="date"/>
+
+
+
+
+
+    <EditText
+        android:id="@+id/reserveWindow_edit_minutes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/reserveWindow_edit_hours"
+        app:layout_constraintRight_toLeftOf="@id/reserveWindow_edit_daytime"
+        app:layout_constraintTop_toBottomOf="@id/reserveWindow_edit_date_year"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="59"
+        android:textColorHint="@color/gray_color0"
+        android:background="@drawable/d_window_componentsbg"
+        android:textColor="@color/black_color"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="19dp"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:drawablePadding="7dp"
+        android:layout_marginLeft="7.5dp"
+        android:layout_marginRight="7.5dp"
+        android:gravity="center"
+        android:maxLength="2"
+        android:inputType="date"/>
+
+
+
+
+    <EditText
+        android:id="@+id/reserveWindow_edit_daytime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/reserveWindow_edit_minutes"
+        app:layout_constraintRight_toRightOf="@id/reserveWindow_edit_address"
+        app:layout_constraintTop_toBottomOf="@id/reserveWindow_edit_date_year"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="PM"
+        android:textColorHint="@color/gray_color0"
+        android:background="@drawable/d_window_componentsbg"
+        android:textColor="@color/black_color"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="7.5dp"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:drawablePadding="7dp"
+        android:gravity="center"
+        android:maxLength="2"
+        android:inputType="textCapCharacters"
+        android:digits="PAMpam"
+        />
+
+
+    <EditText
+        android:id="@+id/reserveWindow_edit_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/reserveWindow_edit_phoneNumber"
+        app:layout_constraintRight_toRightOf="@id/reserveWindow_edit_phoneNumber"
+        app:layout_constraintTop_toBottomOf="@id/reserveWindow_edit_hours"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="Patient status"
+        android:textColorHint="@color/gray_color1"
+        android:background="@drawable/d_window_componentsbg"
+        android:textColor="@color/black_color"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="19dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/b_main_reservation_statusd"
+        android:drawablePadding="7dp"
+        />
+
+
+    <TextView
+        android:id="@+id/reserveWindow_textB_reserve"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/reserveWindow_edit_name"
+        app:layout_constraintEnd_toEndOf="@id/reserveWindow_edit_name"
+        app:layout_constraintTop_toBottomOf="@id/reserveWindow_edit_status"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"
+        android:text="Reserve"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/b_main_reserve_buttonbg"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0.3"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

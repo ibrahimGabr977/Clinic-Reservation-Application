@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ItalianLab" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_color1</item>
+        <item name="colorPrimaryVariant">@color/blue_color1</item>
+        <item name="colorOnPrimary">@color/white_color</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_color1</item>
+        <item name="colorSecondaryVariant">@color/blue_color1</item>
+        <item name="colorOnSecondary">@color/white_color</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:isLightTheme" tools:targetApi="q">true</item>
+    </style>
+
+
+    <style name="MineCustomTabText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+</resources>

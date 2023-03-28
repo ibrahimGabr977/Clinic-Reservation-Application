@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_color"
+    android:layout_marginBottom="15dp"
+    >
+
+
+    <TextView
+        android:id="@+id/requestsHolder_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/requests_card_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0"
+        android:textStyle="bold"
+        android:textColor="@color/black_color"
+        android:textSize="15sp"
+        android:text="Nearest Appointment"
+        android:layout_marginBottom="15dp"/>
+
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/requestsHolder_text_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/requests_card_view"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardBackgroundColor="@color/white_color"
+        android:layout_margin="5dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="17dp"
+            android:paddingBottom="13dp"
+            android:paddingRight="11dp"
+            android:paddingLeft="11dp">
+
+        <TextView
+            android:id="@+id/requestsHolder_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textStyle="bold"
+            android:textColor="@color/black_color"
+            android:textSize="15sp"
+            android:text="Ibrahim Mohammed"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            android:lines="1"
+            android:gravity="start"
+            android:maxEms="9"
+            />
+
+
+
+        <TextView
+            android:id="@+id/requestsHolder_text_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/requestsHolder_text_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/gray_color1"
+            android:textSize="13sp"
+            android:text="17 almabaothen, 8 distrcit, nasr city, cairo, egypt "
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginTop="7dp"
+            android:lines="1"
+            android:gravity="start"
+            android:drawablePadding="7dp"
+            android:maxEms="19"
+            app:drawableStartCompat="@drawable/b_main_schedule_addressd" />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/requestsHolder_text_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/requestsHolder_text_name"
+            app:layout_constraintBottom_toBottomOf="@id/requestsHolder_text_address"
+            app:layout_constraintHorizontal_bias="1"
+            android:background="@drawable/b_main_profile_imagebg"
+            app:srcCompat="@drawable/d_patient_imaged"
+            android:padding="7dp"
+           />
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/requestsHolder_textB_refuse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/requestHolder_textB_accept"
+            app:layout_constraintTop_toBottomOf="@id/requestsHolder_text_address"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/black_color"
+            android:textSize="13sp"
+            android:text="@string/refuse"
+            android:textStyle="bold"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:background="@drawable/b_main_tablayoutbg"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            />
+
+        <TextView
+            android:id="@+id/requestHolder_textB_accept"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/requestsHolder_textB_refuse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/requestsHolder_textB_refuse"
+            app:layout_constraintBottom_toBottomOf="@id/requestsHolder_textB_refuse"
+            android:textColor="@color/white_color"
+            android:textSize="13sp"
+            android:text="@string/accept"
+            android:textStyle="bold"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:background="@drawable/b_main_selected_tabbg"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

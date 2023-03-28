@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "985764318054",
+    "firebase_url": "https://italian-lab-default-rtdb.firebaseio.com",
+    "project_id": "italian-lab",
+    "storage_bucket": "italian-lab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985764318054:android:7203a38812d7efbc8b56a7",
+        "android_client_info": {
+          "package_name": "com.hope.igb.italianlab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985764318054-iju1m0u9ufcs1i7pgeqqgnc947ks05gc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hope.igb.italianlab",
+            "certificate_hash": "b5c4dfcbaad1d20a659f1501a5731f0c394cdfc0"
+          }
+        },
+        {
+          "client_id": "985764318054-jtpcggq0mi7jr56f5g45eru219kt4m08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUlCs25hDicuECXCSlSNRggRiWqAZM7PM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985764318054-jtpcggq0mi7jr56f5g45eru219kt4m08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_color">
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/profile_clinic_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="17dp"
+            android:background="@drawable/testttt"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/profile_home_container"
+            app:layout_constraintLeft_toLeftOf="@id/profile_text_phoneNumber"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5.5dp">
+
+
+            <ImageView
+                android:id="@+id/profile_imageB_clinicVisit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/b_main_profile_clinicd"
+                android:background="@drawable/b_main_profile_imagebg"
+                android:padding="9dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="0"
+                android:layout_marginTop="7dp"
+                />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="@string/clinic_visit"
+                app:layout_constraintTop_toBottomOf="@id/profile_imageB_clinicVisit"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/profile_imageB_clinicVisit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginTop="25dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A6FFFFFF"
+                android:textSize="13sp"
+                android:text="@string/make_an_appointment"
+                app:layout_constraintTop_toBottomOf="@id/text1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/profile_imageB_clinicVisit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="7dp"
+               />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_home_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="17dp"
+        android:background="@drawable/b_main_profile_homebg"
+        app:layout_constraintTop_toTopOf="@id/profile_clinic_container"
+        app:layout_constraintRight_toRightOf="@id/profile_text_phoneNumber"
+        app:layout_constraintLeft_toRightOf="@id/profile_clinic_container"
+        app:layout_constraintBottom_toBottomOf="@id/profile_clinic_container"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="5.5dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/profile_imageB_homeVisit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/b_main_profile_homed"
+            android:background="@drawable/b_main_profile_imagebg"
+            android:padding="9dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginTop="7dp"
+            />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="@string/home_visit"
+            app:layout_constraintTop_toBottomOf="@id/profile_imageB_homeVisit"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/profile_imageB_homeVisit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_color1"
+            android:textSize="13sp"
+            android:text="@string/make_an_appointment"
+            app:layout_constraintTop_toBottomOf="@id/text2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/profile_imageB_homeVisit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="7dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+                android:id="@+id/profile_text_phoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="+201147399365"
+                android:textColor="@color/black_color"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:background="@drawable/b_profile_edittextsbg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_clinic_container"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:paddingVertical="12dp"
+                app:layout_constraintWidth_percent="0.91"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginTop="41dp"
+                android:drawablePadding="9dp"
+                app:drawableStartCompat="@drawable/a_login_phoned" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number"
+                android:textColor="@color/gray_color0"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/profile_text_phoneNumber"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/profile_text_phoneNumber"
+                app:layout_constraintBottom_toTopOf="@id/profile_text_phoneNumber"
+                android:background="@color/white_color"
+                android:paddingHorizontal="7dp"
+                app:layout_constraintHorizontal_bias="0"
+                android:layout_marginStart="37dp"
+                />
+
+            <EditText
+                android:id="@+id/profile_edit_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ibrahim Mohammed"
+                android:textColor="@color/black_color"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:background="@drawable/b_profile_edittextsbg"
+                app:layout_constraintStart_toStartOf="@id/profile_text_phoneNumber"
+                app:layout_constraintEnd_toEndOf="@id/profile_text_phoneNumber"
+                app:layout_constraintTop_toBottomOf="@id/profile_text_phoneNumber"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:paddingVertical="12dp"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginTop="21dp"
+                android:focusable="false"
+                android:drawableEnd="@drawable/b_main_profile_editd"
+                android:drawableStart="@drawable/a_login_named"
+                android:drawablePadding="9dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/full_name"
+                android:textColor="@color/gray_color0"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/profile_edit_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/profile_edit_name"
+                app:layout_constraintBottom_toTopOf="@id/profile_edit_name"
+                android:background="@color/white_color"
+                android:paddingHorizontal="7dp"
+                app:layout_constraintHorizontal_bias="0"
+                android:layout_marginStart="37dp"
+                />
+
+
+            <EditText
+                android:id="@+id/profile_edit_specialization"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Dental"
+                android:textColor="@color/black_color"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:background="@drawable/b_profile_edittextsbg"
+                app:layout_constraintStart_toStartOf="@id/profile_text_phoneNumber"
+                app:layout_constraintEnd_toEndOf="@id/profile_text_phoneNumber"
+                app:layout_constraintTop_toBottomOf="@id/profile_edit_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:paddingVertical="12dp"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginTop="21dp"
+                app:drawableEndCompat="@drawable/b_main_profile_editd"
+                android:drawableStart="@drawable/a_login_specializationd"
+                android:drawablePadding="9dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/specialization"
+                android:textColor="@color/gray_color0"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/profile_edit_specialization"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/profile_edit_specialization"
+                app:layout_constraintBottom_toTopOf="@id/profile_edit_specialization"
+                android:background="@color/white_color"
+                android:paddingHorizontal="7dp"
+                app:layout_constraintHorizontal_bias="0"
+                android:layout_marginStart="37dp"
+                />
+
+
+
+
+    <EditText
+        android:id="@+id/profile_edit_addDoctor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_doctor_hint"
+        android:textColorHint="@color/gray_color1"
+        android:textColor="@color/black_color"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:background="@drawable/b_profile_edittextsbg"
+        app:layout_constraintStart_toStartOf="@id/profile_text_phoneNumber"
+        app:layout_constraintEnd_toEndOf="@id/profile_text_phoneNumber"
+        app:layout_constraintTop_toBottomOf="@id/profile_edit_specialization"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingVertical="12dp"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="21dp"
+        app:drawableEndCompat="@drawable/b_main_profile_editd"
+        android:drawableStart="@drawable/b_main_profile_doctord"
+        android:drawablePadding="9dp"
+        android:inputType="phone"
+        android:autofillHints="@string/add_doctor_hint"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add doctor"
+        android:textColor="@color/gray_color0"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/profile_edit_addDoctor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/profile_edit_addDoctor"
+        app:layout_constraintBottom_toTopOf="@id/profile_edit_addDoctor"
+        android:background="@color/white_color"
+        android:paddingHorizontal="7dp"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginStart="37dp"
+        />
+
+
+
+
+
+
+    <TextView
+                android:id="@+id/settings_textB_deleteAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_edit_specialization"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/logout"
+                android:textSize="12sp"
+                android:background="@drawable/b_main_profile_logoutbg"
+                android:textColor="@color/white_color"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingStart="95dp"
+                android:paddingEnd="95dp"
+                android:drawablePadding="9dp"
+                app:drawableEndCompat="@drawable/b_main_profile_logoutd" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

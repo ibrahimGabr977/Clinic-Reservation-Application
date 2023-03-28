@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardBackgroundColor="@color/white_color"
+    android:layout_margin="5dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="17dp"
+        android:paddingBottom="13dp"
+        android:paddingRight="11dp"
+        android:paddingLeft="11dp"
+        android:background="#26399CFF">
+
+        <TextView
+            android:id="@+id/completedHolder_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textStyle="bold"
+            android:textColor="@color/black_color"
+            android:textSize="15sp"
+            android:text="Ibrahim Mohammed"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            android:lines="1"
+            android:gravity="start"
+            android:maxEms="9"
+            />
+
+
+
+        <TextView
+            android:id="@+id/completedHolder_text_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/completedHolder_text_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/gray_color1"
+            android:textSize="13sp"
+            android:text="17 almabaothen, 8 distrcit, nasr city, cairo, egypt "
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginTop="7dp"
+            android:lines="1"
+            android:gravity="start"
+            android:drawablePadding="7dp"
+            android:maxEms="19"
+            app:drawableStartCompat="@drawable/b_main_schedule_addressd" />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/completedHolder_text_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/completedHolder_text_name"
+            app:layout_constraintBottom_toBottomOf="@id/completedHolder_text_address"
+            app:layout_constraintHorizontal_bias="1"
+            android:background="@drawable/b_main_profile_imagebg"
+            app:srcCompat="@drawable/d_patient_imaged"
+            android:padding="7dp"
+           />
+
+
+
+        <TextView
+            android:id="@+id/completedHolder_text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/completedHolder_text_address"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/black_gray_color"
+            android:textSize="12sp"
+            android:text="12/05/2021"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            android:lines="1"
+            android:layout_marginTop="31dp"
+            app:drawableStartCompat="@drawable/b_main_schedule_dated"
+            android:drawablePadding="7dp"/>
+
+
+        <TextView
+            android:id="@+id/completedHolder_text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/completedHolder_text_date"
+            app:layout_constraintEnd_toStartOf="@id/completedHolder_text_patientStatus"
+            app:layout_constraintTop_toTopOf="@id/completedHolder_text_date"
+            app:layout_constraintBottom_toBottomOf="@id/completedHolder_text_date"
+            android:textColor="@color/black_gray_color"
+            android:textSize="12sp"
+            android:text="10:30 AM"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            android:lines="1"
+            app:drawableStartCompat="@drawable/b_main_schedule_timed"
+            android:drawablePadding="7dp"/>
+
+        <TextView
+            android:id="@+id/completedHolder_text_patientStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/completedHolder_text_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/completedHolder_text_date"
+            app:layout_constraintBottom_toBottomOf="@id/completedHolder_text_date"
+            android:textColor="@color/black_gray_color"
+            android:textSize="12sp"
+            android:text="Confirmed"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            android:lines="1"
+            app:drawableStartCompat="@drawable/b_main_green_circled"
+            android:drawablePadding="7dp"
+            android:maxEms="7"/>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+

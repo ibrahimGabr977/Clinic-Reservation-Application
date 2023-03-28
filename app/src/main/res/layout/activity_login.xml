@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginActivity"
+    android:background="@color/white_color"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/login_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/a_login_phone_image"
+        android:scaleType="fitXY"
+        app:layout_constraintWidth_percent="0.19"
+        app:layout_constraintVertical_bias="0.11"
+        />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/login_welcome_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_image"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="23dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:textStyle="bold"
+            android:text="Welcome to Italian Lab"
+            android:textSize="21sp"
+            android:layout_marginBottom="2.5dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:text="Please enter your phone number to sign in"
+            android:textSize="15sp"
+            android:layout_marginTop="2.5dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/login_edit_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/login_welcome_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/a_login_editbg"
+        android:hint="Enter phone number"
+        android:textColorHint="@color/gray_color1"
+        android:textColor="@color/black_color"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:layout_marginBottom="7.5dp"
+        android:drawableStart="@drawable/a_login_phoned"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:drawablePadding="9dp"
+        app:layout_constraintWidth_percent="0.79"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:id="@+id/login_text_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/login_edit_phone"
+        app:layout_constraintEnd_toEndOf="@id/login_edit_phone"
+        app:layout_constraintTop_toBottomOf="@id/login_edit_phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_light"
+        android:text="@string/login_invalid_phone"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="9dp"
+        android:visibility="invisible"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        />
+
+    <TextView
+        android:id="@+id/login_textB_signin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/login_edit_phone"
+        app:layout_constraintEnd_toEndOf="@id/login_edit_phone"
+        app:layout_constraintTop_toBottomOf="@id/login_text_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/a_login_signinbg"
+        android:text="@string/sign_in"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintVertical_bias="0"
+        android:onClick="onSignInClicked"
+        />
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/login_line"
+        android:layout_width="0dp"
+        android:layout_height="0.7dp"
+        android:background="@color/black_gray_color"
+        app:layout_constraintBottom_toTopOf="@id/login_contacts_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_textB_signin"
+        app:layout_constraintWidth_percent="0.75"
+        />
+
+
+    <TextView
+        android:id="@+id/contactUs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        app:layout_constraintBottom_toBottomOf="@id/login_line"
+        app:layout_constraintEnd_toEndOf="@id/login_line"
+        app:layout_constraintStart_toStartOf="@id/login_line"
+        app:layout_constraintTop_toBottomOf="@id/login_line"
+        android:text="@string/contact_us"
+        android:textColor="@color/black_gray_color"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="12sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/login_contacts_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/login_line"
+        app:layout_constraintEnd_toEndOf="@id/login_line"
+        app:layout_constraintTop_toBottomOf="@id/login_line"
+        app:layout_constraintBottom_toTopOf="@id/login_text_signature"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+
+        <ImageView
+            android:id="@+id/login_imageB_whatsapp"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/a_login_whatsappd"
+            android:background="@drawable/a_login_whatsappbg"
+            android:layout_marginEnd="7dp"
+            android:padding="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/login_imageB_facebook"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/a_login_facebookd"
+            android:background="@drawable/a_login_facebookbg"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="7dp"
+            android:padding="6dp"
+            />
+
+        <ImageView
+            android:id="@+id/login_imageB_twitter"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/a_login_twitterd"
+            android:background="@drawable/a_login_twitterbg"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="3dp"
+            />
+
+        <ImageView
+            android:id="@+id/login_imageB_gmail"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/a_login_gmaild"
+            android:background="@drawable/a_login_gmailbg"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/login_imageB_contactPhone"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/a_login_contact_phoned"
+            android:background="@drawable/a_login_contact_phonebg"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="7dp"
+            android:padding="5dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/login_text_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_signature"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_contacts_container"
+        android:textColor="#C42E2E2E"
+        android:textSize="9sp"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_color">
+
+
+    <View
+        android:id="@+id/achievements_uploading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:background="#73FFFFFF"
+        android:visibility="gone"/>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/uploadProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:trackThickness="3dp"
+        app:trackColor="#0D22619C"
+        app:indicatorColor="@color/blue_color1"
+        app:indicatorDirectionCircular="counterclockwise"
+        app:indicatorSize="55dp"
+        android:visibility="gone"
+        android:elevation="20dp"
+        />
+
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@id/uploadProgress"
+        app:layout_constraintLeft_toLeftOf="@id/uploadProgress"
+        app:layout_constraintTop_toTopOf="@id/uploadProgress"
+        app:layout_constraintBottom_toBottomOf="@id/uploadProgress"
+        android:textStyle="bold"
+        android:textColor="@color/black_color"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:elevation="20dp"
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/videos_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textStyle="bold"
+                android:textColor="@color/black_color"
+                android:text="@string/videos"
+                android:textSize="17sp"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="0"/>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/videosRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/videos_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="0"
+                android:minHeight="100dp"
+                android:layout_marginTop="11dp"
+                android:paddingBottom="1.5dp"
+                android:nestedScrollingEnabled="false"
+
+                />
+
+            <TextView
+                android:id="@+id/achievements_text_empty_videos"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="@color/gray_color0"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/videosRecyclerView"
+                app:layout_constraintBottom_toBottomOf="@id/videosRecyclerView"
+                app:layout_constraintVertical_bias="0"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/images_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/videosRecyclerView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textStyle="bold"
+                android:textColor="@color/black_color"
+                android:text="@string/images"
+                android:textSize="17sp"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="0"
+                android:layout_marginTop="11dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/imagesRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/images_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginTop="11dp"
+                android:paddingBottom="1.5dp"
+                android:layout_marginBottom="5dp"
+                android:nestedScrollingEnabled="false"
+                />
+
+            <TextView
+                android:id="@+id/achievements_text_empty_images"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="@color/gray_color0"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintHeight_percent="0.32"
+                app:layout_constraintTop_toBottomOf="@id/images_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/achievements_upload_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/b_main_achievements_addd"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        app:layout_constraintHorizontal_bias="0.95"
+        android:backgroundTint="#C4276CAE"
+        android:padding="0dp"
+        app:fabCustomSize="47dp"
+        android:focusable="true" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
